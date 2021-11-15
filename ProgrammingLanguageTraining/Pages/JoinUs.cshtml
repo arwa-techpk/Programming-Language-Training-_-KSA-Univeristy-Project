@@ -1,0 +1,57 @@
+﻿@page
+@model ProgrammingLanguageTraining.Pages.JoinUsModel
+@{
+    ViewData["Title"] = "Join Us";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+            <div class="cardflex-row">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-center">Join Us</h5>
+                    <form class="form-signin">
+                        <div class="form-label-group">
+                            <label for="selectUserType">User Type</label>
+                            <select id="selectUserType" class="form-control" required autofocus>
+                                <option>Select</option>
+                                <option value="Trainer">Trainer</option>
+                                <option value="Staff">Staff</option>
+                            </select>
+
+                        </div>
+                        <div class="form-label-group">
+                            <label for="inputUserame">Username</label>
+                            <input type="text" id="inputUserame" class="form-control" placeholder="Username" required>
+
+                        </div>
+
+                        <div class="form-label-group">
+                            <label for="inputEmail">Email address</label>
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                             
+                        </div>
+
+                        <hr>
+
+                        <div class="form-label-group">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+                        </div>
+
+                        <div class="form-label-group">
+                            <label for="inputConfirmPassword">Confirm password</label>
+                            <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+
+                        </div>
+                        <div class="mt-5">
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
